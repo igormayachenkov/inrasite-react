@@ -1,0 +1,43 @@
+/* PERSON BOX */
+.person
+{
+    position:relative;
+    width:320px;
+    height:170px;
+    margin-left:5px;
+    margin-bottom:5px;
+	background: #fff;
+}
+.person .name
+{
+    margin-left:10px;
+    font-size:14px;
+    color: #FE0D90;
+}
+.person img.photo
+{
+    display:block;
+    position:absolute;
+    height:128px;
+    top:30px;
+    left:10px;
+}
+.person div
+{
+    margin-left:143px;
+    margin-top:10px;
+    word-wrap:break-word;
+}
+.person div.mail a
+{
+    color:#888;
+}
+
+.person div.birthday
+{
+    color:#29B0E2;
+}
+
+.App {
+  text-align: center;
+}
