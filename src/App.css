@@ -6,3 +6,13 @@ body
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
+nav {
+  background: #dddddd
+}
+nav a{
+  padding: 1ex
+}
+.active{
+  background: #ffffaa
+}
+
