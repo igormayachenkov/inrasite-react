@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import './People.css';
+import './Devices.css';
 
-class People extends Component {
+class Devices extends Component {
   constructor(props) {
       super(props);
 
       // State
       this.state = {
-        people:[]
+        devices:[]
         //selectedId:null
       };
       // Handlers
@@ -18,7 +18,7 @@ class People extends Component {
     console.log('load list... ');
     
     // ROOT NODES request
-    fetch(global.API_URL+'/people',{
+    fetch(global.API_URL+'/devices',{
         method:'GET',
         credentials: "include",// to allow cookies
         headers: {
@@ -29,7 +29,7 @@ class People extends Component {
         response.json()
           .then(data=>{
               if(response.status===200){
-                let state = {people:data};
+                let state = {devices:data};
                 // Update state
                 this.setState(state);
               }else{
@@ -61,22 +61,27 @@ class People extends Component {
   
     
   render() {
-    console.log("People RENDER");
-    let items = this.state.people.map(p => 
-        <div key={p.id} className='person'>
-            <div className='name'>{p.firstname} {p.lastname}</div>
-            <img className='photo' alt="photo"/>
-            <div className='position'>{p.position}</div>
-            <div className='phone'>{p.phone}</div>
-            <div className='mail'>{p.mail}</div>
-            <div className='birthday'>{p.birthday_day+'.'+p.birthday_month}</div>
-        </div>
+    console.log("devices RENDER");
+    let items = this.state.devices.map(p => 
+        <tr key={p.id} className='device'>
+            <td className='code'>{p.id}</td>
+            <td className='name'>{p.name}</td>
+            <td className='content'>{p.content}</td>
+            <td className='serial'>{p.serial}</td>
+            <td className='received'>{p.received}</td>
+            <td className='owner'>{p.owner?(p.owner.firstname+' '+p.owner.lastname):''}</td>
+        </tr>
     );
     return (
-      <div>
-        {items}
+      <div className='devices-page'>
+        <table>
+            <tr><th>#</th><th>Name</th><th>Content</th><th>Serial</th><th>Received</th><th>Owner</th></tr>
+            <tbody>
+                {items}
+            </tbody>
+        </table>
       </div>
     );
   }
 }
-export default People;
+export default Devices;

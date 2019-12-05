@@ -1,0 +1,43 @@
+.devices-page{
+	font-family:sans-serif;
+}
+.devices-page > table{
+	width: 100%;
+	margin-top:1ex;
+}
+
+.devices-page th.active{
+	cursor:default;
+	color: #FE0D90;
+	text-decoration:underline;
+}
+.devices-page th a:hover{
+	color: #FE0D90;
+}
+	
+
+
+.device {
+	background:#fff;
+}
+.device:nth-child(even){
+	background:#eef;
+}
+.device td.code {
+	text-align:center;
+	font-weight:bold;
+	padding:0ex 1ex;
+}
+.device td.name {
+	max-width:20em;
+}
+.device td.content {
+	max-width:15em;
+}
+.device td.received {
+	min-width:8em;
+	text-align:center;
+}
+.device td.owner {
+	padding-left:1em;
+}
