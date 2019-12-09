@@ -3,16 +3,36 @@ body
   background:#E9E9E9;
   padding:0px;
   margin:0px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
-  background: #dddddd
+  background-color: #000;
+  background-image: linear-gradient(to top, #444 0%, #666 40%, #666 60%, #444 100%);
+
+  -moz-box-shadow:    0 0 10px rgba(0,0,0,1.0); /* Для Firefox */
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,1.0); /* Для Safari и Chrome */
+  box-shadow:         0 0 10px rgba(0,0,0,1.0); /* Параметры тени */
+    
+  vertical-align:middle;
+  text-align:left;
+  position:relative;
+
+  display: flex;
+  justify-content:space-around;
 }
 nav a{
-  padding: 1ex
+  display:block;
+  padding: 0.5ex;
+  color:White;
+  border-bottom: none;
+  font-weight:normal;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-weight:bold;
 }
 nav a.active{
-  background: #ffffaa
+  color: #FE2DB0;
+  background: #000;
 }
 

@@ -5,8 +5,8 @@ import Home from './Home';
 import People from './People';
 import Devices from './Devices';
 
-//global.API_URL = 'http://localhost:8080/api'; // DEVELOPMENT
-global.API_URL = "http://192.168.21.41/api"; // PRODUCTION
+global.API_URL = 'http://localhost:8080/api'; // DEVELOPMENT
+//global.API_URL = "http://192.168.21.41/api"; // PRODUCTION
 
 function App() {
   return (
