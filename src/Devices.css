@@ -9,13 +9,12 @@
 .devices-page th.active{
 	cursor:default;
 	color: #FE0D90;
-	text-decoration:underline;
 }
-.devices-page th a:hover{
+.devices-page th.sortable:hover{
+	cursor:pointer;
 	color: #FE0D90;
 }
 	
-
 
 .device {
 	background:#fff;

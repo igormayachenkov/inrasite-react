@@ -12,15 +12,17 @@ function App() {
   return (
     <div>
       <nav>
-      <NavLink exact to="/home" activeClassName='active'>Home</NavLink>
+      <NavLink to="/home" activeClassName='active'>Home</NavLink>
       <NavLink to="/people" activeClassName='active'>People</NavLink>
       <NavLink to="/devices" activeClassName='active'>Devices</NavLink>
       </nav>
       <div>
-      <Redirect from="/" exact to="/home" />
       <Route path="/home" component={Home} />
       <Route path="/people" component={People} />
       <Route path="/devices" component={Devices} />
+      <Route exact path="/">
+          {<Redirect to="/home"/>}
+      </Route>
       </div>
     </div>
   );

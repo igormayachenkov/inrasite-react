@@ -12,7 +12,7 @@ nav {
 nav a{
   padding: 1ex
 }
-.active{
+nav a.active{
   background: #ffffaa
 }
 
