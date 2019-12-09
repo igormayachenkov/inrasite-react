@@ -20,7 +20,7 @@ class People extends Component {
     console.log('load list... ');
     
     // ROOT NODES request
-    fetch(global.API_URL+'/people',{
+    fetch(global.API_URL+'/api/people',{
         method:'GET',
         credentials: "include",// to allow cookies
         headers: {
@@ -77,7 +77,7 @@ class People extends Component {
     return (          
       <div key={p.id} className='person'>
       <div className='name'>{p.firstname} {p.lastname}</div>
-      <img className='photo' src={global.API_URL+'/photos/'+p.lastname+' '+p.firstname+'.jpg'} alt="photo"/>
+      <img className='photo' src={global.API_URL+'/files/photos/'+p.lastname+' '+p.firstname+'.jpg'} alt="photo"/>
       <div className='position'>{position}</div>
       <div className='phone'>{p.phone}</div>
       <div className='mail'>{p.mail}</div>

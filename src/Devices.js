@@ -19,7 +19,7 @@ class Devices extends Component {
     console.log('load list... ');
     
     // ROOT NODES request
-    fetch(global.API_URL+'/devices',{
+    fetch(global.API_URL+'/api/devices',{
         method:'GET',
         credentials: "include",// to allow cookies
         headers: {
