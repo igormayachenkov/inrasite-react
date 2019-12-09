@@ -3,26 +3,19 @@ import './Home.css';
 
 function Home() {
   return (
-    <div className='home-page'>
+    <div className='page'>
       <div className='box'>
-          <div className="content">
-            <h1>ADDRESS</h1>
-            <div>109129 Москва,<br/>8-я ул.Текстильщиков д.11, стр.2<br/>tel: +7 495 987 4397 </div>
-
-
-          </div>
+        <h1>ADDRESS</h1>
+        <div>109129 Москва,<br/>8-я ул.Текстильщиков д.11, стр.2<br/>tel: +7 495 987 4397 </div>
       </div>
       
       <div className="box">
-          <div className="content">
-              <h1>VACATIONS SCHEDULE</h1>
-            <a href="/documents/VacSchedule2019.xls" download>2019 year vacations schedule</a>
-          </div>
+        <h1>VACATIONS SCHEDULE</h1>
+        <a href={global.API_URL+'/files/documents/VacSchedule2019.xls'} download>2019 year vacations schedule</a>
       </div>
 
       <div class="box">
-        <div class="content">
-            <h1>HOLIDAYS</h1>
+        <h1>HOLIDAYS</h1>
 			1, 2, 3, 4, 5, 6, 8 января — Новогодние каникулы;<br/>     
 			7 января — Рождество Христово;<br/>     
 			23 февраля — День защитника Отечества;<br/>     
@@ -38,9 +31,6 @@ function Home() {
 			<br/>
 			Для тех, кто не понял алгоритм, решение тут:<br/>
 			<a href="http://www.superjob.ru/proizvodstvennyj_kalendar/">Производственный календарь</a>
-			
-			
-        </div>
     </div>
 
       <div className="clear"></div>
