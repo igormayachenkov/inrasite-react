@@ -1,0 +1,13 @@
+
+
+.videos {
+	margin-top: 1ex;
+	
+	display:flex;
+	flex-wrap:wrap;
+}
+.box iframe{
+	width:400px;
+	height:200px;
+	padding:1ex;
+}
