@@ -86,7 +86,7 @@ class People extends Component {
     )}
     
   render() {
-    console.log("People RENDER", this.state.departments);
+    //console.log("People RENDER", this.state.departments);
     let dps = this.state.departments;
     if(dps.administration)  var administration = dps.administration.map(this.renderPerson);
     if(dps.developers)  var developers = dps.developers.map(this.renderPerson);

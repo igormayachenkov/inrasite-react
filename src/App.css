@@ -24,14 +24,13 @@ nav {
 }
 nav a{
   display:block;
-  padding: 0.5ex 1ex;
+  padding: 1ex 2ex;
   margin-right: 2em;
   color:White;
   border-bottom: none;
   font-weight:normal;
   text-decoration:none;
   text-transform:uppercase;
-  font-weight:bold;
 }
 nav a.active{
   color: #FE2DB0;
