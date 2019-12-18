@@ -1,6 +1,6 @@
 {
   "name": "intrasite-react",
-  "version": "1.0.0+2019.12.16",
+  "version": "1.0.0+2019.12.18",
   "private": true,
   "dependencies": {
     "react": "^16.12.0",

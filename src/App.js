@@ -8,7 +8,7 @@ import Normatives from './Normatives';
 import Gallery from './Gallery';
 
 //global.API_URL = 'http://localhost:8080'; // DEVELOPMENT
-global.API_URL = "http://192.168.21.41:8080"; // PRODUCTION
+global.API_URL = "https://site.hiq.ru"; // PRODUCTION
 
 function App() {
   return (
